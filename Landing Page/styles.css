@@ -1,0 +1,142 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1532619032244-6f82d53e2ab9?fit=crop&w=1920&q=80') no-repeat center center/cover;
+    color: #fff;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.cta-button {
+    background: #ff9800;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#about, #speakers, #schedule, #register {
+    padding: 2rem 0;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.speakers-grid {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.speaker {
+    flex: 1 1 calc(33.333% - 1rem);
+    max-width: 200px;
+    text-align: center;
+}
+
+.speaker img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    margin: auto;
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form button {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+footer a {
+    color: #ff9800;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
