@@ -1,125 +1,78 @@
+@import url("https://uilight.netlify.app/main.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+
+:root {
+  --text-color-primary: #f9fafb;
+  --background-color: #111827;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: url('https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?cs=srgb&dl=pexels-1236701.jpg&fm=jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  background-color: var(--background-color);
 }
 
-.navbar {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+.main {
+  padding: 2rem 0;
+  width: 30vw;
+  margin-left: 50vw;
+  transform: translateX(-50%);
 }
 
-.navbar-container {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.heading-1 {
+  color: var(--text-color-primary);
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
-.navbar-brand {
-    color: #fff;
-    font-size: 24px;
-    text-decoration: none;
+.input {
+  border-radius: 4px;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  border: none;
+  width: 25vw;
+  margin-bottom: 0.5rem;
 }
 
-.navbar-nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 15px;
+.input:focus {
+  outline: none;
 }
 
-.navbar-nav li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
+.t-checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
-.navbar-nav li a:hover {
-    color: #ff9800;
+.btn-primary {
+  font-size: 1.25rem;
+  padding: 0.5rem 0.875rem;
 }
 
-.todo-container {
-    background-color: rgba(0, 0, 0, 0.85);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    margin-top: 120px;
+.todo {
+  color: var(--text-color-primary);
+  font-size: 1.5rem;
 }
 
-h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    text-align: center;
-    color: #fff;
+.todos-container {
+  height: 70vh;
+  overflow-y: auto;
 }
 
-.input-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+.t-pointer {
+  cursor: pointer;
 }
 
-input[type="text"] {
-    width: 70%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #000;
+.todos {
+  padding-bottom: 0.5rem;
 }
 
-button {
-    width: 25%;
-    padding: 10px;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.todo-text {
+  word-wrap: break-word;
 }
 
-button:hover {
-    background-color: #218838;
+.checked-todo {
+  text-decoration: line-through;
+  color: var(--text-color-primary);
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #000;
-}
-
-li.completed {
-    text-decoration: line-through;
-    color: #777;
-}
-
-.task-buttons button {
-    margin-left: 5px;
+.del-btn {
+    color: #f9fafb;
 }
